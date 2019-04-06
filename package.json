@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "babel src --out-dir lib --presets=@babel/env && uglifyjs --compress --mangle -o dist/SlingUrl.js -- lib/SlingUrl.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^6.0.2"
+  },
+  "dependencies": {
+    "uglify-js": "^3.5.3"
   }
 }

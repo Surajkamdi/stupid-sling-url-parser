@@ -1,5 +1,5 @@
 var assert = require("assert");
-var SlingUrl = require("../SlingUrl");
+var SlingUrl = require("../src/SlingUrl");
 const expectedData = [
   {
     URI: "/a/b",

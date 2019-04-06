@@ -1,5 +1,5 @@
-module.exports = class SlingUrl {
-  constructor(url) {
+class SlingUrl {
+  constructor (url) {
     url = url.startsWith("/") ? "h://t.co" + url : url;
 
     this._url = new URL(url);
@@ -39,3 +39,17 @@ module.exports = class SlingUrl {
     this.suffix = suffix ? "/" + suffix : null;
   }
 };
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = SlingUrl;
+}
+else {
+  if (typeof define === 'function' && define.amd) {
+    define([], function() {
+      return SlingUrl;
+    });
+  }
+  else {
+    window.SlingUrl = SlingUrl;
+  }
+}
