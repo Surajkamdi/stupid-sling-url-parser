@@ -1,6 +1,6 @@
 # A Really stupid Apache Sling URL Parser
 
-This is a stupid implementation to parse [Apache Sling Url](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html) in JS. **You shoukd really use [Sluri](https://github.com/nateyolles/sluri)**.
+This is a stupid implementation to parse [Apache Sling Url](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html) in JS. **You should really use [Sluri](https://github.com/nateyolles/sluri)**.
 
 I built this for fun. It only supports Modern browsers (Sorry not sorry IE) and NodeJs 10+. Also, it is EXTREMELY small! ~1KB minified. Sluri is 6.5 KB minified but has a lot more functionality.
 
