@@ -17,3 +17,9 @@ console.log(slingUrl.suffix)       // returns "/c/d"
 
 // if any of the properties above does not exist, null is returned.
 ```
+
+## Running tests
+
+```
+npm test
+```
